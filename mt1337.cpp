@@ -7,9 +7,6 @@ MT1337::MT1337(int seed) {
 	index = 624;
 	mt[0] = seed;
 	
-	for (int n = 1; n < 624; n++) {
-		mt[n] = 0;
-	} //Maybe unneccesary
 	
 	for (int n = 1; n < 624; n++) {
 		mt[n] = 1812433253 * ( mt[n-1] ^ mt[n -1] >> 30) + n; 
